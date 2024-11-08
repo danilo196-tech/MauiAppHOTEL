@@ -4,17 +4,26 @@
              x:Class="MauiAppHOTEL.Views.Contratacaodahospedagem"
              Title="Contratacaodahospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray200}">
-    
+                Background="{StaticResource MeuGradiente}" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="MeuGradiente" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Yellow" Offset="0.0"/>
+                <GradientStop Color="Red" Offset="1.0"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10">
+                         Padding="10"
+                         >
         <Label 
             Text="Cálculo da Diária"
             FontFamily="Kalam"
             FontSize="50"
-            TextColor="{StaticResource Primary}"/>
+            TextColor="{StaticResource MidnightBlue}"/>
 
-        <Frame Padding="10">
+        <Frame Padding="10" BackgroundColor="Gainsboro">
             <VerticalStackLayout>
 
                 <Grid RowDefinitions="Auto, Auto"

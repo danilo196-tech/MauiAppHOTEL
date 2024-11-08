@@ -3,12 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHOTEL.Views.hospedagemcontratada"
              Title="Hospedagemcontratada"
-             NavigationPage.HasNavigationBar="False"
-             
-             BackgroundColor= Grad>
+             NavigationPage.HasNavigationBar="False"    
+       Background="{StaticResource MeuGradiente}" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="MeuGradiente" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Yellow" Offset="0.0"/>
+                <GradientStop Color="Red" Offset="1.0"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
-    
-    
+
+
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
         <Label Text="Suíte super luxo"
