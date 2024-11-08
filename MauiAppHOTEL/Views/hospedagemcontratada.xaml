@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHOTEL.Views.hospedagemcontratada"
+             Title="Hospedagemcontratada"
+             NavigationPage.HasNavigationBar="False"
+             
+             BackgroundColor= Grad>
+    
+    
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte super luxo"
+               TextColor="{StaticResource MidnightBlue}"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+        <Frame>
+            <HorizontalStackLayout>
+
+
+                <HorizontalStackLayout>
+                    <Label Text="Adultos:"/>
+                    <Label Text="  num" 
+                           TextColor="{StaticResource Magenta}"/>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="    Crianças:"/>
+                    <Label Text=" num" 
+                           TextColor="{StaticResource Magenta}"/>
+
+                </HorizontalStackLayout>               
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <Grid ColumnDefinitions="*,*,*"
+                  RowDefinitions="Auto, Auto ">
+                
+                
+                <Label Grid.Row="0" 
+                       Grid.Column="0" 
+                       Text="Check-in:"
+                       />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="xx/xx/xxxx"
+                       TextColor="{StaticResource Magenta}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="yy/yy/yyyy"
+                       TextColor="{StaticResource Magenta}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="10 dias"
+                       TextColor="{StaticResource Magenta}"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <Label Text="Valor Total: "/>
+                <Label Text="  RS 750,00"
+                       TextColor="Green"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Button_Clicked"
+                BorderColor="AliceBlue"
+                BackgroundColor="DarkSlateGrey"/>
+    </VerticalStackLayout>
+</ContentPage>
